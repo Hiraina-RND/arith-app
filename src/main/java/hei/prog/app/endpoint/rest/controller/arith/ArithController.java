@@ -13,26 +13,22 @@ public class ArithController {
   ArithService arithService;
 
   @GetMapping("/add")
-  ResponseEntity<Double> add(
-      @RequestParam Double a, @RequestParam Double b) {
+  ResponseEntity<Double> add(@RequestParam Double a, @RequestParam Double b) {
     return ResponseEntity.ok(arithService.add(a, b));
   }
 
   @GetMapping("/sub")
-  ResponseEntity<Double> sub(
-      @RequestParam Double a, @RequestParam Double b) {
+  ResponseEntity<Double> sub(@RequestParam Double a, @RequestParam Double b) {
     return ResponseEntity.ok(arithService.sub(a, b));
   }
 
   @GetMapping("/mul")
-  ResponseEntity<Double> mul(
-      @RequestParam Double a, @RequestParam Double b) {
+  ResponseEntity<Double> mul(@RequestParam Double a, @RequestParam Double b) {
     return ResponseEntity.ok(arithService.mul(a, b));
   }
 
   @GetMapping("/div")
-  ResponseEntity<Double> div(
-      @RequestParam Double a, @RequestParam Double b) {
+  ResponseEntity<Double> div(@RequestParam Double a, @RequestParam Double b) {
     return ResponseEntity.ok(arithService.div(a, b));
   }
 }

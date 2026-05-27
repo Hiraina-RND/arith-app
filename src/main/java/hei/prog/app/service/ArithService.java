@@ -25,7 +25,8 @@ public class ArithService {
   public Double div(Double a, Double b) {
     validate(a, b);
 
-    if (Double.compare(b, 0.0) == 0) throw new BadRequestException("Division by zero is not allowed");
+    if (Double.compare(b, 0.0) == 0)
+      throw new BadRequestException("Division by zero is not allowed");
     return a / b;
   }
 
